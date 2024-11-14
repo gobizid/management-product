@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoBiz - Solusi untuk Usaha Anda</title>
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="GoBiz adalah solusi lengkap untuk mengembangkan usaha Anda, mulai dari penerimaan pembayaran digital hingga pengelolaan promosi."
+    />
+    <meta
+      name="keywords"
+      content="GoBiz, usaha kuliner, icalan, komplek, arisan, komunitas, bisnis, aplikasi bisnis"
+    />
+    <meta name="author" content="GoBiz by Indibiz, Gobiz Develope" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="GoBiz - Solusi untuk Usaha Anda" />
+    <meta
+      property="og:description"
+      content="GoBiz adalah solusi lengkap untuk mengembangkan usaha Anda, mulai dari penerimaan pembayaran digital hingga pengelolaan promosi."
+    />
+    <meta property="og:image" content="img/square.webp" />
+    <meta property="og:url" content="https://go.biz.id" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GoBiz - Solusi untuk Usaha Anda" />
+    <meta
+      name="twitter:description"
+      content="GoBiz adalah solusi lengkap untuk mengembangkan usaha Anda, mulai dari penerimaan pembayaran digital hingga pengelolaan promosi."
+    />
+    <meta name="twitter:image" content="img/square.webp" />
+
+    <!-- favicon -->
+    <link
+      rel="icon"
+      href="/assets/img/logos/logo-fix.png"
+      type="image/x-icon"
+    />
+
+    <!-- base github -->
+    <base href="/" />
+
+    <!-- package -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.1.14/dist/lenis.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/ol@v10.2.1/ol.css"
+    />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="/src/style/style.css" />
+  </head>
+
+  <body>
+    <main class="dashboard">
+      <!-- header navbar -->
+      <header class="topbar">
+        <div class="app-header">
+          <div class="app-header-navigation">
+            <div
+              class="management-product-submenu submenu"
+            >
+              <a href="/management-product">
+                <span class="material-symbols-outlined"> package_2 </span>
+                <span> Products</span>
+              </a>
+              <div class="submenu-item">
+                <a href="/management-product/categories">
+                  <span class="material-symbols-outlined"> category </span>
+                  <span class="text"> Categories </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="app-header-actions">
+            <div class="user-profile">
+              <span class="text">Matheo Peterson</span>
+              <div class="image">
+                <img
+                  src="https://assets.codepen.io/285131/almeria-avatar.jpeg"
+                />
+              </div>
+            </div>
+            <div class="app-header-actions">
+              <div class="icon-button">
+                <i class="ph ph-magnifying-glass"></i>
+              </div>
+              <div class="icon-button">
+                <i class="ph ph-bell"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- sidebar -->
+      <aside class="sidebar">
+        <div class="navigation">
+          <div class="navigation-logo">
+            <a href="/" class="nav-logo">
+              <img src="/assets/img/logos/logo-fix.png" alt="GoBiz Logo" />
+              <span>obiz</span>
+            </a>
+            <span class="material-symbols-outlined"> left_panel_close </span>
+          </div>
+
+          <div class="navigation-nav">
+            <a
+              href="/dashboard"
+              data-menu="dashboard"
+              class="menu-item to-link"
+            >
+              <i class="ph ph-gauge"></i>
+              <span>Dashboard</span>
+            </a>
+            <a
+              href="/management-product"
+              data-menu="management-product"
+              class="menu-item to-link"
+            >
+              <i class="ph ph-storefront"></i>
+              <span>Management Product</span>
+            </a>
+            <a href="/map" data-menu="map" class="menu-item to-link">
+              <i class="ph ph-map-pin-area"></i>
+              <span>Map</span>
+            </a>
+            <a class="logout" href="#">
+              <i class="ph ph-sign-out"></i>
+              <span>Logout</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <section class="management-product-categories">
+        <div class="product-dashboard">
+          <div class="header-product">
+            <h1>Dashboard Produk</h1>
+            <button class="btn tambah">Tambah Produk</button>
+          </div>
+          <div class="product-list"></div>
+        </div>
+      </section>
+    </main>
+    <!-- package -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ol@v10.2.1/dist/ol.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
